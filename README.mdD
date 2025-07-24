@@ -1,7 +1,8 @@
-Dieses Repository ist Bestandteil einer Bachelorrbeit an der Hochschule Landshut.
+Dieses Repository ist Bestandteil einer Bachelorarbeit an der Hochschule Landshut.
 Autor: Martin Schuldes
 Titel der Arbeit: Der CVM-Algorithmus im Praxistest
 
-Der in diesem Repository veröffentlichte Kundendatenbankgenreator errschafft eine Pseudokundendatenbank mit Namen, IBAN und E-Mail und speichert diese in einer RTF-Datei ab. 
-Falls ein weniger verbreitetes Betriebssytem verwendet wird, kann es zu einer Fehlermeldung kommen, da die Methode Desktop.open() nicht unterstützt wird. 
-Da der Kundendatenbankgenerator lediglich für die Generierung von Testdatem für den ebenfalls veröffentlichten CVM-Algorithmus 
+Der in diesem Repository veröffentlichte Kundendatenbankgenerator erschafft eine Pseudokundendatenbank mit Namen, IBAN und E-Mail und speichert diese in einer RTF-Datei ab. Falls ein weniger verbreitetes Betriebssystem verwendet wird, kann es zu einer Fehlermeldung kommen, da die Methode Desktop.open() nicht unterstützt wird. 
+Da der Kundendatenbankgenerator lediglich für die Generierung von Testdaten für den ebenfalls veröffentlichten CVM-Algorithmus dient, wurde auf die exakte Implementierung der E-Mail mit verschiedenen Domains sowie der IBAN-Prüfziffer verzichtet. 
+
+Letztes Upload: 23.07.2025
