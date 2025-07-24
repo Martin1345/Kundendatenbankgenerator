@@ -4,10 +4,10 @@ import java.util.*;
 
 public class Kundendatenbankgenerator {
  private static final int Kundenanzahl = 23480; // Anzahl der zu generierenden Kunden
-    private static final String Dateiname = "Kundendatenbank.rtf"; // Name unter dem die Datei gespeichert wird
-    private static final String Zeichensatz = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"; // Erlaubte Zeichen für den Zufallsgenerator
-    private static final Random random = new Random(); // Zufallsgenerator zur Generierung von zufälligen Worten und Zahlen
-    private static final int Schriftgroesse = 6; // Schriftgröße für die RTF-Datei; so kleinm, damit Kundendaten in einer Zeile passen
+  private static final String Dateiname = "Kundendatenbank.rtf"; // Name unter dem die Datei gespeichert wird
+  private static final String Zeichensatz = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"; // Erlaubte Zeichen für den Zufallsgenerator
+  private static final Random random = new Random(); // Zufallsgenerator zur Generierung von zufälligen Worten und Zahlen
+  private static final int Schriftgroesse = 6; // Schriftgröße für die RTF-Datei; so kleinm, damit Kundendaten in einer Zeile passen
 
     
     private static String generiere_Zufallswort(int minLaenge, int maxLaenge) {// Methode zur Generierung eines zufälligen Wortes 
