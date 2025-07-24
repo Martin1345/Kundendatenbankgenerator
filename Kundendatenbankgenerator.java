@@ -26,7 +26,8 @@ public class Kundendatenbankgenerator {
     }
 
     private static String generiere_Strasse() {// Generiere eine zufällige Straße mit Hausnummer
-        return generiere_Zufallswort(8, 15) + " " + (random.nextInt(100) + 1); // Generiere einen Straßennamen mit 8 bis 15 Zeichen und eine Hausnummer im Bereich 1 bis 100
+        return generiere_Zufallswort(8, 15) + " " + (random.nextInt(100) + 1); // Generiere einen Straßennamen mit 8 bis 15 Zeichen 
+     //und eine Hausnummer im Bereich 1 bis 100
     }
 
 
