@@ -10,7 +10,8 @@ public class Kundendatenbankgenerator {
     private static final int Schriftgroesse = 6; // Schriftgröße für die RTF-Datei; so kleinm, damit Kundendaten in einer Zeile passen
 
     
-    private static String generiere_Zufallswort(int minLaenge, int maxLaenge) {// Methode zur Generierung eines zufälligen Wortes mit einer Länge zwischen minLaenge und maxLaenge
+    private static String generiere_Zufallswort(int minLaenge, int maxLaenge) {// Methode zur Generierung eines zufälligen Wortes 
+     //mit einer Länge zwischen minLaenge und maxLaenge
         int Laenge = random.nextInt(maxLaenge - minLaenge + 1) + minLaenge; // Zufällige Länge des Strings zwischen minLaenge und maxLaenge
         StringBuilder sb = new StringBuilder(); // StringBuilder zur Erstellung des Strings
         for (int i = 0; i < Laenge; i++) { // Solange die zufällige Länge noch nicht erreicht wurde
