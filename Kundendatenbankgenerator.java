@@ -1,4 +1,4 @@
-import java.awt.Desktop; // Enthält die Mehode zur automatischen Öffnung nach Speicherung der Datei
+import java.awt.Desktop; // Enthält die Methode zur automatischen Öffnung nach Speicherung der Datei
 import java.io.*; // Enthält die Methoden zum Schreiben in eine Datei
 import java.util.*;
 
@@ -31,7 +31,7 @@ public class Kundendatenbankgenerator {
     }
 
 
-    private static String generiere_Stadt() {// Generierung einer zufälligen Stadt mit 6 bis 12 Zeichen
+    private static String generiere_Stadt() {// Generiere eine zufällige Stadt mit 6 bis 12 Zeichen
         return generiere_Zufallswort(6, 12); // Generiere einen Namen für die Stadt mit 6 bis 12 Zeichen
     }
 
@@ -39,7 +39,7 @@ public class Kundendatenbankgenerator {
     private static String Zufallszahl(int Laenge) {// Erzeugung einer Folge von Ganzzahlen beliebiger Länge
         StringBuilder sb = new StringBuilder(); // Neuer StringBuilder zur Erschaffung von Zufallszahlen
         for (int i = 0; i < Laenge; i++) { // Solange die geforderte Länge noch nicht erreicht wurde
-            sb.append(random.nextInt(10)); // Füge eine zufällige Ziffer zwischen 0 und 9 hinzu
+            sb.append(random.nextInt(10)); // Füge eine zufällige Ziffer zwischen 0 und 9 hinzu.
         }
         return sb.toString(); // Gib den Ziffernstring zurück. 
     }
@@ -47,7 +47,7 @@ public class Kundendatenbankgenerator {
     // Baue eine deutsche IBAN aus Zufallszahlen
     private static String generiere_IBAN() {
         return "DE" + Zufallszahl(2) + " " + Zufallszahl(4) + " " + Zufallszahl(4) + " "
-                + Zufallszahl(4) + " " + Zufallszahl(4) + " " + Zufallszahl(2); // Generierung einer deutschen IBAN mit 22 Ziffern, 
+                + Zufallszahl(4) + " " + Zufallszahl(4) + " " + Zufallszahl(2); // Generiere eine deutsche IBAN mit 22 Ziffern, 
      //aufgeteilt in 5 Teile   
     }
 
@@ -84,7 +84,7 @@ public class Kundendatenbankgenerator {
                 String IBAN = Kunde[2]; // IBAN übernehmen
                 String Adresse = Kunde[3] + ", " + Kunde[4] + " " + Kunde[5]; // Setze Adresse zusammen aus Straße, PLZ und Stadt
 
-                writer.write(Name + ";" + Email + ";" + IBAN + ";" + Adresse + "\\line\n"); //Schreibe die Daten in die RTF-Datei,generiere
+                writer.write(Name + ";" + Email + ";" + IBAN + ";" + Adresse + "\\line\n"); //Schreibe die Daten in die RTF-Datei, generiere
              //auch einen Zeilenumbruch nach jedem Datensatz
             }
 
