@@ -91,8 +91,8 @@ public class Kundendatenbankgenerator {
             writer.write("}"); // RTF-Ende
             System.out.println("RTF-Datei gespeichert: " + Dateiname); // Gib bei erfolgreicher Speicherung eine Erfolgsmeldung aus
 
-            Desktop.getDesktop().open(new File(Dateiname)); // Öffne die RTF-Datei automatisch nach dem Speichern, 
-         //falls der Desktop-Support verfügbar ist falls nicht, gib eine Fehlermeldung aus
+            Desktop.getDesktop().open(new File(Dateiname)); // Öffnet die RTF-Datei automatisch nach dem Speichern, 
+         //falls der Desktop-Support verfügbar ist. Falls nicht wird eine Fehlermeldung ausgegeben
         } catch (IOException e) {
             System.err.println("Fehler beim Schreiben der RTF-Datei: " + e.getMessage()); // Gib eine Fehlermeldung aus, 
          //falls ein Fehler beim Schreiben der Datei auftritt. 
